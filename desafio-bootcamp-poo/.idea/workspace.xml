@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="625a69f9-6373-4858-9473-f40e50b39592" name="Changes" comment="Criados Bootcamp e Dev">
-      <change afterPath="$PROJECT_DIR$/src/com/br/desafio/dominio/Bootcamp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/br/desafio/dominio/Conteudo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/br/desafio/dominio/Dev.java" afterDir="false" />
+    <list default="true" id="625a69f9-6373-4858-9473-f40e50b39592" name="Changes" comment="Final Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/desafio/dominio/Curso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/desafio/dominio/Curso.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/desafio/dominio/Mentoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/desafio/dominio/Mentoria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafio-bootcamp-poo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-bootcamp-poo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/desafio/dominio/Dev.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/desafio/dominio/Dev.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652374095405</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Criados Bootcamp e Dev">
+      <created>1652378786886</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1652378786886</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,6 +118,18 @@
     <MESSAGE value="Removed second gitignore" />
     <MESSAGE value="Add mentoria e curso" />
     <MESSAGE value="Criados Bootcamp e Dev" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criados Bootcamp e Dev" />
+    <MESSAGE value="Final Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final Commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -2,9 +2,11 @@ package com.br.desafio.dominio;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.LinkedHashSet;
 import java.util.Objects;
+import java.util.Optional;
 import java.util.Set;
 
 public class Dev {
@@ -15,9 +17,22 @@ public class Dev {
     @Getter @Setter
     private Set<Conteudo> conteudoConcluido = new LinkedHashSet<>();
 
-    public void inscrever(Bootcamp bootcamp){}
-    public void progredir(){}
-    public void calcularTotalXp(){}
+    public void inscrever(@NotNull Bootcamp bootcamp){
+        this.conteudoInscrito.addAll(bootcamp.getConteudos());
+        bootcamp.getDevsInscritos().add(this);
+    }
+    public void progredir(){
+        Optional<Conteudo> conteudo = this.conteudoInscrito.stream().findFirst();
+        if(conteudo.isPresent()){
+            this.conteudoConcluido.add(conteudo.get());
+            this.conteudoInscrito.remove(conteudo.get());
+        }else {
+            System.err.println("Não matriculado em nenhum conteudo");
+        }
+    }
+    public double calcularTotalXp(){
+        return this.conteudoConcluido.stream().mapToDouble(Conteudo::calcularXp).sum();
+    }
 
     @Override
     public boolean equals(Object o) {
