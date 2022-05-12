@@ -5,11 +5,7 @@ import lombok.Setter;
 
 import java.time.LocalDate;
 
-public class Mentoria {
-    @Getter @Setter
-    private String titulo;
-    @Getter @Setter
-    private String descricao;
+public class Mentoria extends Conteudo{
     @Getter @Setter
     private LocalDate data;
 
@@ -19,9 +15,14 @@ public class Mentoria {
     @Override
     public String toString() {
         return "Mentoria{" +
-                "titulo='" + titulo + '\'' +
-                ", descricao='" + descricao + '\'' +
+                "titulo='" + getTitulo() + '\'' +
+                ", descricao='" + getDescricao() + '\'' +
                 ", data=" + data +
                 '}';
+    }
+
+    @Override
+    public double calcularXp() {
+        return XP_PADRAO+20d;
     }
 }

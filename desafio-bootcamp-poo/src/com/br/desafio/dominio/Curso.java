@@ -4,11 +4,8 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-public class Curso {
-    @Getter @Setter
-    private String titulo;
-    @Getter @Setter
-    private String descricao;
+public class Curso extends  Conteudo{
+
     @Getter @Setter
     private int cargaHoraria;
 
@@ -18,9 +15,14 @@ public class Curso {
     @Override
     public String toString() {
         return "Curso{" +
-                "titulo='" + titulo + '\'' +
-                ", descricao='" + descricao + '\'' +
+                "titulo='" + getTitulo() + '\'' +
+                ", descricao='" + getDescricao() + '\'' +
                 ", cargaHoraria=" + cargaHoraria +
                 '}';
+    }
+
+    @Override
+    public double calcularXp() {
+        return XP_PADRAO*cargaHoraria;
     }
 }
